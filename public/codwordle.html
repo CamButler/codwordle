@@ -3,12 +3,64 @@
 <head>
   <title>Call of Duty Map Wordle</title>
   <style>
-    /* Add your custom CSS styles here */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: sans-serif;
+      background-color: #F5F5F5;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 300px;
+      margin-bottom: 20px;
+      border: 5px solid #EEE;
+      padding: 20px;
+      background-color: #FFF;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    
+    input {
+      padding: 8px;
+      margin-right: 10px;
+      width: 100px;
+      border: 1px solid #AAA;
+    }
+    
+    button {
+      padding: 8px 15px;
+      background-color: #4CAF50;
+      color: #FFF;
+      border: none;
+      cursor: pointer;
+    }
+    
+    #result-div {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    
+    #wordle-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
   <h1>Call of Duty Map Wordle</h1>
-  
+
   <div id="game-container">
     <img id="map-image" src="" alt="Map Image">
     <input id="guess-input" type="text" placeholder="Enter your guess" />
